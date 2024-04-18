@@ -16,7 +16,7 @@ async function searchProducts(q: string): Promise<ProductInterface[]> {
     response.json(),
   )
 
-  return response.products
+  return response
 }
 
 export default async function SearchProducts({

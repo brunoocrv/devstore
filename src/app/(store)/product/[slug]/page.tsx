@@ -94,7 +94,7 @@ export async function generateStaticParams() {
     cache: 'no-store',
   }).then((response) => response.json())
 
-  const slugs: { slug: string }[] = response.products.map(
+  const slugs: { slug: string }[] = response.map(
     (product: ProductInterface) => ({
       slug: product.slug,
     }),

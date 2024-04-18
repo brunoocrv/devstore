@@ -11,7 +11,7 @@ async function getFeaturedProducts(): Promise<ProductInterface[]> {
     cache: 'no-store',
   }).then((response) => response.json())
 
-  return response.products
+  return response
 }
 
 export default async function StoreHome() {
